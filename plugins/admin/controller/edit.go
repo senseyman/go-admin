@@ -6,23 +6,23 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/GoAdminGroup/go-admin/modules/logger"
+	"github.com/senseyman/go-admin/modules/logger"
 
-	"github.com/GoAdminGroup/go-admin/template"
+	"github.com/senseyman/go-admin/template"
 
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/response"
+	"github.com/senseyman/go-admin/plugins/admin/modules/response"
 
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/modules/auth"
-	"github.com/GoAdminGroup/go-admin/modules/file"
-	"github.com/GoAdminGroup/go-admin/modules/language"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/constant"
-	form2 "github.com/GoAdminGroup/go-admin/plugins/admin/modules/form"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/parameter"
-	"github.com/GoAdminGroup/go-admin/template/types"
-	"github.com/GoAdminGroup/go-admin/template/types/form"
+	"github.com/senseyman/go-admin/context"
+	"github.com/senseyman/go-admin/modules/auth"
+	"github.com/senseyman/go-admin/modules/file"
+	"github.com/senseyman/go-admin/modules/language"
+	"github.com/senseyman/go-admin/plugins/admin/modules"
+	"github.com/senseyman/go-admin/plugins/admin/modules/constant"
+	form2 "github.com/senseyman/go-admin/plugins/admin/modules/form"
+	"github.com/senseyman/go-admin/plugins/admin/modules/guard"
+	"github.com/senseyman/go-admin/plugins/admin/modules/parameter"
+	"github.com/senseyman/go-admin/template/types"
+	"github.com/senseyman/go-admin/template/types/form"
 )
 
 // ShowForm show form page.

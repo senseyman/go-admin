@@ -5,8 +5,9 @@ import (
 	"html/template"
 	"testing"
 
-	"github.com/GoAdminGroup/go-admin/modules/config"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/senseyman/go-admin/modules/config"
 )
 
 func TestKK(t *testing.T) {

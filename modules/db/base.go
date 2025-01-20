@@ -5,8 +5,9 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/GoAdminGroup/go-admin/modules/config"
 	"xorm.io/xorm"
+
+	"github.com/senseyman/go-admin/modules/config"
 )
 
 // Base is a common Connection.

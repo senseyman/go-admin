@@ -1,37 +1,38 @@
 package gf
 
 import (
+	"net/http"
+	"os"
 	// add gf adapter
 	"reflect"
 
-	_ "github.com/GoAdminGroup/go-admin/adapter/gf2"
 	"github.com/agiledragon/gomonkey"
 
+	_ "github.com/senseyman/go-admin/adapter/gf2"
+
 	// add mysql driver
-	"github.com/GoAdminGroup/go-admin/modules/config"
-	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/mysql"
-	"github.com/GoAdminGroup/go-admin/modules/language"
+	"github.com/senseyman/go-admin/modules/config"
+	_ "github.com/senseyman/go-admin/modules/db/drivers/mysql"
+	"github.com/senseyman/go-admin/modules/language"
 
 	// add postgresql driver
-	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/postgres"
+	_ "github.com/senseyman/go-admin/modules/db/drivers/postgres"
 	// add sqlite driver
-	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/sqlite"
+	_ "github.com/senseyman/go-admin/modules/db/drivers/sqlite"
 	// add mssql driver
-	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/mssql"
+	_ "github.com/senseyman/go-admin/modules/db/drivers/mssql"
 	// add adminlte ui theme
 	"github.com/GoAdminGroup/themes/adminlte"
 
-	"net/http"
-	"os"
-
-	"github.com/GoAdminGroup/go-admin/engine"
-	"github.com/GoAdminGroup/go-admin/plugins/admin"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/table"
-	"github.com/GoAdminGroup/go-admin/template"
-	"github.com/GoAdminGroup/go-admin/template/chartjs"
-	"github.com/GoAdminGroup/go-admin/tests/tables"
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/net/ghttp"
+
+	"github.com/senseyman/go-admin/engine"
+	"github.com/senseyman/go-admin/plugins/admin"
+	"github.com/senseyman/go-admin/plugins/admin/modules/table"
+	"github.com/senseyman/go-admin/template"
+	"github.com/senseyman/go-admin/template/chartjs"
+	"github.com/senseyman/go-admin/tests/tables"
 )
 
 func internalHandler() http.Handler {

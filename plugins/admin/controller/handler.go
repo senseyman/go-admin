@@ -4,19 +4,20 @@ import (
 	template2 "html/template"
 	"regexp"
 
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/modules/auth"
-	"github.com/GoAdminGroup/go-admin/modules/errors"
-	"github.com/GoAdminGroup/go-admin/modules/logger"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/constant"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/form"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/parameter"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/response"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/table"
-	"github.com/GoAdminGroup/go-admin/template"
-	"github.com/GoAdminGroup/go-admin/template/types"
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
+
+	"github.com/senseyman/go-admin/context"
+	"github.com/senseyman/go-admin/modules/auth"
+	"github.com/senseyman/go-admin/modules/errors"
+	"github.com/senseyman/go-admin/modules/logger"
+	"github.com/senseyman/go-admin/plugins/admin/modules/constant"
+	"github.com/senseyman/go-admin/plugins/admin/modules/form"
+	"github.com/senseyman/go-admin/plugins/admin/modules/parameter"
+	"github.com/senseyman/go-admin/plugins/admin/modules/response"
+	"github.com/senseyman/go-admin/plugins/admin/modules/table"
+	"github.com/senseyman/go-admin/template"
+	"github.com/senseyman/go-admin/template/types"
 )
 
 // GlobalDeferHandler is a global error handler of admin plugin.

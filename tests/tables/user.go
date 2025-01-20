@@ -4,16 +4,16 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/modules/config"
-	"github.com/GoAdminGroup/go-admin/modules/db"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/table"
-	"github.com/GoAdminGroup/go-admin/template/icon"
-	"github.com/GoAdminGroup/go-admin/template/types"
-	"github.com/GoAdminGroup/go-admin/template/types/action"
-	"github.com/GoAdminGroup/go-admin/template/types/form"
-	selection "github.com/GoAdminGroup/go-admin/template/types/form/select"
-	editType "github.com/GoAdminGroup/go-admin/template/types/table"
+	"github.com/senseyman/go-admin/context"
+	"github.com/senseyman/go-admin/modules/config"
+	"github.com/senseyman/go-admin/modules/db"
+	"github.com/senseyman/go-admin/plugins/admin/modules/table"
+	"github.com/senseyman/go-admin/template/icon"
+	"github.com/senseyman/go-admin/template/types"
+	"github.com/senseyman/go-admin/template/types/action"
+	"github.com/senseyman/go-admin/template/types/form"
+	selection "github.com/senseyman/go-admin/template/types/form/select"
+	editType "github.com/senseyman/go-admin/template/types/table"
 )
 
 // GetUserTable return the model of table user.

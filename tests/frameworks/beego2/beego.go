@@ -5,27 +5,28 @@ import (
 	"os"
 
 	// add beego adapter
-	_ "github.com/GoAdminGroup/go-admin/adapter/beego2"
+	_ "github.com/senseyman/go-admin/adapter/beego2"
 	// add mysql driver
-	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/mysql"
+	_ "github.com/senseyman/go-admin/modules/db/drivers/mysql"
 	// add postgresql driver
-	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/postgres"
+	_ "github.com/senseyman/go-admin/modules/db/drivers/postgres"
 	// add sqlite driver
-	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/sqlite"
+	_ "github.com/senseyman/go-admin/modules/db/drivers/sqlite"
 	// add mssql driver
-	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/mssql"
+	_ "github.com/senseyman/go-admin/modules/db/drivers/mssql"
 
-	"github.com/GoAdminGroup/go-admin/engine"
-	"github.com/GoAdminGroup/go-admin/modules/config"
-	"github.com/GoAdminGroup/go-admin/modules/language"
-	"github.com/GoAdminGroup/go-admin/plugins/admin"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/table"
-	"github.com/GoAdminGroup/go-admin/plugins/example"
-	"github.com/GoAdminGroup/go-admin/template"
-	"github.com/GoAdminGroup/go-admin/template/chartjs"
-	"github.com/GoAdminGroup/go-admin/tests/tables"
-	"github.com/GoAdminGroup/themes/adminlte"
 	"github.com/beego/beego/v2/server/web"
+
+	"github.com/GoAdminGroup/themes/adminlte"
+	"github.com/senseyman/go-admin/engine"
+	"github.com/senseyman/go-admin/modules/config"
+	"github.com/senseyman/go-admin/modules/language"
+	"github.com/senseyman/go-admin/plugins/admin"
+	"github.com/senseyman/go-admin/plugins/admin/modules/table"
+	"github.com/senseyman/go-admin/plugins/example"
+	"github.com/senseyman/go-admin/template"
+	"github.com/senseyman/go-admin/template/chartjs"
+	"github.com/senseyman/go-admin/tests/tables"
 )
 
 func internalHandler() http.Handler {

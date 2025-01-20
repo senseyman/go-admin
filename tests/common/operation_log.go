@@ -4,9 +4,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/GoAdminGroup/go-admin/modules/config"
-	"github.com/GoAdminGroup/go-admin/modules/language"
 	"github.com/gavv/httpexpect"
+
+	"github.com/senseyman/go-admin/modules/config"
+	"github.com/senseyman/go-admin/modules/language"
 )
 
 func operationLogTest(e *httpexpect.Expect, sesID *http.Cookie) {

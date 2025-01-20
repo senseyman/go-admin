@@ -4,9 +4,10 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/GoAdminGroup/go-admin/modules/config"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/models"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/senseyman/go-admin/modules/config"
+	"github.com/senseyman/go-admin/plugins/admin/models"
 )
 
 func TestCheckPermissions(t *testing.T) {

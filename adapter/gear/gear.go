@@ -15,16 +15,17 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/GoAdminGroup/go-admin/adapter"
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/engine"
-	"github.com/GoAdminGroup/go-admin/modules/config"
-	"github.com/GoAdminGroup/go-admin/modules/utils"
-	"github.com/GoAdminGroup/go-admin/plugins"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/models"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/constant"
-	"github.com/GoAdminGroup/go-admin/template/types"
 	"github.com/teambition/gear"
+
+	"github.com/senseyman/go-admin/adapter"
+	"github.com/senseyman/go-admin/context"
+	"github.com/senseyman/go-admin/engine"
+	"github.com/senseyman/go-admin/modules/config"
+	"github.com/senseyman/go-admin/modules/utils"
+	"github.com/senseyman/go-admin/plugins"
+	"github.com/senseyman/go-admin/plugins/admin/models"
+	"github.com/senseyman/go-admin/plugins/admin/modules/constant"
+	"github.com/senseyman/go-admin/template/types"
 )
 
 // Gear structure value is a Gin GoAdmin adapter.

@@ -11,16 +11,14 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/GoAdminGroup/go-admin/adapter"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/models"
-	"github.com/GoAdminGroup/go-admin/template/types"
-	"github.com/kataras/iris/v12"
-
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/engine"
-	"github.com/GoAdminGroup/go-admin/modules/config"
-	"github.com/GoAdminGroup/go-admin/plugins"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/constant"
+	"github.com/senseyman/go-admin/adapter"
+	"github.com/senseyman/go-admin/context"
+	"github.com/senseyman/go-admin/engine"
+	"github.com/senseyman/go-admin/modules/config"
+	"github.com/senseyman/go-admin/plugins"
+	"github.com/senseyman/go-admin/plugins/admin/models"
+	"github.com/senseyman/go-admin/plugins/admin/modules/constant"
+	"github.com/senseyman/go-admin/template/types"
 )
 
 // Iris structure value is an Iris GoAdmin adapter.

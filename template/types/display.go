@@ -6,11 +6,12 @@ import (
 	"html/template"
 	"strings"
 
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/modules/config"
-	"github.com/GoAdminGroup/go-admin/template/types/form"
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
+
+	"github.com/senseyman/go-admin/context"
+	"github.com/senseyman/go-admin/modules/config"
+	"github.com/senseyman/go-admin/template/types/form"
 )
 
 type DisplayFnGenerator interface {

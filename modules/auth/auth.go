@@ -8,15 +8,16 @@ import (
 	"log"
 	"sync"
 
-	"github.com/GoAdminGroup/go-admin/modules/db/dialect"
-	"github.com/GoAdminGroup/go-admin/modules/logger"
+	"github.com/senseyman/go-admin/modules/db/dialect"
+	"github.com/senseyman/go-admin/modules/logger"
 
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/modules/db"
-	"github.com/GoAdminGroup/go-admin/modules/service"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/models"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules"
 	"golang.org/x/crypto/bcrypt"
+
+	"github.com/senseyman/go-admin/context"
+	"github.com/senseyman/go-admin/modules/db"
+	"github.com/senseyman/go-admin/modules/service"
+	"github.com/senseyman/go-admin/plugins/admin/models"
+	"github.com/senseyman/go-admin/plugins/admin/modules"
 )
 
 // Auth get the user model from Context.
