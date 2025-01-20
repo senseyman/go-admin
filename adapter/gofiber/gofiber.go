@@ -11,6 +11,7 @@ import (
 	"net/url"
 	"strings"
 
+	"github.com/gofiber/fiber/v2"
 	"github.com/valyala/fasthttp"
 
 	"github.com/senseyman/go-admin/adapter"

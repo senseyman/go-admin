@@ -11,6 +11,8 @@ import (
 	"net/url"
 	"strings"
 
+	"github.com/kataras/iris/v12"
+
 	"github.com/senseyman/go-admin/adapter"
 	"github.com/senseyman/go-admin/context"
 	"github.com/senseyman/go-admin/engine"

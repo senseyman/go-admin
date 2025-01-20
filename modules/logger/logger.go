@@ -12,6 +12,7 @@ import (
 
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
+	"gopkg.in/natefinch/lumberjack.v2"
 
 	"github.com/senseyman/go-admin/context"
 	"github.com/senseyman/go-admin/modules/trace"
