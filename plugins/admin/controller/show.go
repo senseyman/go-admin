@@ -12,9 +12,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/360EntSecGroup-Skylar/excelize"
+	"github.com/xuri/excelize/v2"
 
-	"github.com/senseyman/html"
 	"github.com/senseyman/go-admin/context"
 	"github.com/senseyman/go-admin/modules/auth"
 	"github.com/senseyman/go-admin/modules/errors"
@@ -32,6 +31,7 @@ import (
 	"github.com/senseyman/go-admin/template/types"
 	"github.com/senseyman/go-admin/template/types/action"
 	form2 "github.com/senseyman/go-admin/template/types/form"
+	"github.com/senseyman/html"
 )
 
 // ShowInfo show info page.
@@ -403,13 +403,16 @@ func (h *Handler) Export(ctx *context.Context) {
 	panel := h.table(prefix, ctx)
 
 	f := excelize.NewFile()
-	index := f.NewSheet(tableName)
+	index, err := f.NewSheet(tableName)
+	if err != nil {
+		response.Error(ctx, "NewSheet error")
+		return
+	}
 	f.SetActiveSheet(index)
 
 	var (
 		infoData  table.PanelInfo
 		fileName  string
-		err       error
 		tableInfo = panel.GetInfo()
 		params    parameter.Parameters
 	)

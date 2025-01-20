@@ -3,7 +3,6 @@ module github.com/senseyman/go-admin
 go 1.23.4
 
 require (
-	github.com/360EntSecGroup-Skylar/excelize v1.4.1
 	github.com/NebulousLabs/fastrand v0.0.0-20181203155948-6fb6489aac4e
 	github.com/agiledragon/gomonkey v2.0.2+incompatible
 	github.com/astaxie/beego v1.12.3
@@ -32,6 +31,7 @@ require (
 	github.com/stretchr/testify v1.10.0
 	github.com/teambition/gear v1.27.3
 	github.com/valyala/fasthttp v1.58.0
+	github.com/xuri/excelize/v2 v2.9.0
 	go.uber.org/zap v1.27.0
 	golang.org/x/crypto v0.32.0
 	golang.org/x/text v0.21.0
@@ -140,6 +140,8 @@ require (
 	github.com/prometheus/client_model v0.6.1 // indirect
 	github.com/prometheus/common v0.62.0 // indirect
 	github.com/prometheus/procfs v0.15.1 // indirect
+	github.com/richardlehane/mscfb v1.0.4 // indirect
+	github.com/richardlehane/msoleps v1.0.4 // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
 	github.com/rogpeppe/go-internal v1.13.1 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
@@ -167,6 +169,8 @@ require (
 	github.com/xeipuuv/gojsonpointer v0.0.0-20190905194746-02993c407bfb // indirect
 	github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415 // indirect
 	github.com/xeipuuv/gojsonschema v1.2.0 // indirect
+	github.com/xuri/efp v0.0.0-20241211021726-c4e992084aa6 // indirect
+	github.com/xuri/nfp v0.0.0-20250111060730-82a408b9aa71 // indirect
 	github.com/yalp/jsonpath v0.0.0-20180802001716-5cc68e5049a0 // indirect
 	github.com/yosssi/ace v0.0.5 // indirect
 	github.com/yudai/gojsondiff v1.0.0 // indirect
