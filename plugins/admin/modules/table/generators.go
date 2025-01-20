@@ -15,7 +15,7 @@ import (
 	"golang.org/x/text/cases"
 	textLang "golang.org/x/text/language"
 
-	"github.com/GoAdminGroup/html"
+	"github.com/senseyman/html"
 	"github.com/senseyman/go-admin/context"
 	"github.com/senseyman/go-admin/modules/collection"
 	"github.com/senseyman/go-admin/modules/config"

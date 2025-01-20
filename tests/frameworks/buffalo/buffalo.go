@@ -1,7 +1,7 @@
 package buffalo
 
 import (
-	"github.com/GoAdminGroup/themes/adminlte"
+	"github.com/senseyman/themes/adminlte"
 	// add buffalo adapter
 	_ "github.com/senseyman/go-admin/adapter/buffalo"
 	"github.com/senseyman/go-admin/modules/config"
@@ -17,7 +17,7 @@ import (
 	// add mssql driver
 	_ "github.com/senseyman/go-admin/modules/db/drivers/mssql"
 	// add adminlte ui theme
-	_ "github.com/GoAdminGroup/themes/adminlte"
+	_ "github.com/senseyman/themes/adminlte"
 
 	"github.com/senseyman/go-admin/template"
 	"github.com/senseyman/go-admin/template/chartjs"

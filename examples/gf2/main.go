@@ -15,7 +15,7 @@ import (
 
 	"github.com/gogf/gf/v2/frame/g"
 
-	"github.com/GoAdminGroup/themes/adminlte"
+	"github.com/senseyman/themes/adminlte"
 	"github.com/senseyman/go-admin/modules/language"
 	"github.com/senseyman/go-admin/plugins/example"
 	"github.com/senseyman/go-admin/template"

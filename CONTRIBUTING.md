@@ -4,7 +4,7 @@ If you want to contribute, but not sure what to do, here's a list of things that
 
 * Translations
     * README.md
-    * [docs](https://github.com/GoAdminGroup/docs/issues/1)
+    * [docs](https://github.com/senseyman/docs/issues/1)
 * Bug-hunting
 * Finding security problems
 * Themes and Plugins

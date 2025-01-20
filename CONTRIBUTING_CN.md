@@ -4,7 +4,7 @@
 
 * 翻译
     * README.md
-    * [docs](https://github.com/GoAdminGroup/docs/issues/1)
+    * [docs](https://github.com/senseyman/docs/issues/1)
 * 寻找BUG
 * 寻找安全问题
 * 主题和插件

@@ -14,7 +14,7 @@ import (
 
 	"github.com/360EntSecGroup-Skylar/excelize"
 
-	"github.com/GoAdminGroup/html"
+	"github.com/senseyman/html"
 	"github.com/senseyman/go-admin/context"
 	"github.com/senseyman/go-admin/modules/auth"
 	"github.com/senseyman/go-admin/modules/errors"

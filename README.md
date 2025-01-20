@@ -48,7 +48,7 @@ Online demo: [https://demo.go-admin.com](https://demo.go-admin.com)
 - ⚙️ **Frameworks**: support most of the go web frameworks.
 
 ## Translation
-We need your help: [https://github.com/GoAdminGroup/docs/issues/1](https://github.com/GoAdminGroup/docs/issues/1)
+We need your help: [https://github.com/senseyman/docs/issues/1](https://github.com/senseyman/docs/issues/1)
 
 ## Who is using
 
@@ -60,7 +60,7 @@ Following three steps to run it.
 
 ```shell
 $ mkdir new_project && cd new_project
-$ go install github.com/GoAdminGroup/adm@latest
+$ go install github.com/senseyman/adm@latest
 $ adm init web
 ```
 
@@ -68,9 +68,9 @@ $ adm init web
 
 Quick follow up example: 
 
-- [pure golang](https://github.com/GoAdminGroup/example), simple and less dependency
-- [golang with frontend template](https://github.com/GoAdminGroup/example_with_frontend), change template by yourself
-- [golang with vue](https://github.com/GoAdminGroup/example_with_vue), if you have vue experience
+- [pure golang](https://github.com/senseyman/example), simple and less dependency
+- [golang with frontend template](https://github.com/senseyman/example_with_frontend), change template by yourself
+- [golang with vue](https://github.com/senseyman/example_with_vue), if you have vue experience
 
 See the [docs](https://book.go-admin.cn) for more details.
 

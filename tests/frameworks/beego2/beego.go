@@ -17,7 +17,7 @@ import (
 
 	"github.com/beego/beego/v2/server/web"
 
-	"github.com/GoAdminGroup/themes/adminlte"
+	"github.com/senseyman/themes/adminlte"
 	"github.com/senseyman/go-admin/engine"
 	"github.com/senseyman/go-admin/modules/config"
 	"github.com/senseyman/go-admin/modules/language"
