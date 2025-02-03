@@ -40,7 +40,7 @@ func FixedLanguageKey(key string) string {
 	return key
 }
 
-var Langs = [...]string{EN, CN, JP, TC}
+var Langs = []string{EN, CN, JP, TC}
 
 // Get return the value of default scope.
 func Get(value string) string {
