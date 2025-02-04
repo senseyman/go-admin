@@ -7,7 +7,6 @@ package db
 import (
 	dbsql "database/sql"
 	"errors"
-	"fmt"
 	"regexp"
 	"strconv"
 	"strings"
@@ -562,7 +561,7 @@ func (sql *SQL) Insert(values dialect.H) (int64, error) {
 
 	sql.dialect.Insert(&sql.SQLComponent)
 
-	if sql.diver.Name() == DriverPostgresql && (strings.Contains(postgresInsertCheckTableName, sql.TableName)) {
+	if sql.diver.Name() == DriverPostgresql {
 
 		resMap, err := sql.diver.QueryWith(sql.tx, sql.conn, sql.Statement+" RETURNING id", sql.Args...)
 
@@ -595,18 +594,17 @@ func (sql *SQL) Insert(values dialect.H) (int64, error) {
 		return resMap[0]["id"].(int64), nil
 	}
 
-	res, err := sql.diver.QueryWith(sql.tx, sql.conn, sql.Statement, sql.Args...)
+	res, err := sql.diver.ExecWith(sql.tx, sql.conn, sql.Statement, sql.Args...)
 
 	if err != nil {
 		return 0, err
 	}
 
-	var id int
-	if len(res) > 0 {
-		id, _ = strconv.Atoi(fmt.Sprintf("%v", res[0]["id"]))
+	if affectRow, _ := res.RowsAffected(); affectRow < 1 {
+		return 0, errors.New("no affect row")
 	}
 
-	return int64(id), nil
+	return res.LastInsertId()
 }
 
 func (sql *SQL) wrap(field string) string {
