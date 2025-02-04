@@ -281,5 +281,5 @@ func (sql *SQLComponent) prepareInsert(delimiter, delimiter2 string) {
 	fields = fields[:len(fields)-1] + ")"
 	quesMark = quesMark[:len(quesMark)-1] + ")"
 
-	sql.Statement = "insert into " + delimiter + sql.TableName + delimiter2 + fields + " values " + quesMark + " RETURNING id"
+	sql.Statement = "insert into " + delimiter + sql.TableName + delimiter2 + fields + " values " + quesMark
 }
