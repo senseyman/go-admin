@@ -7,6 +7,7 @@ package db
 import (
 	dbsql "database/sql"
 	"errors"
+	"fmt"
 	"regexp"
 	"strconv"
 	"strings"
@@ -594,17 +595,18 @@ func (sql *SQL) Insert(values dialect.H) (int64, error) {
 		return resMap[0]["id"].(int64), nil
 	}
 
-	res, err := sql.diver.ExecWith(sql.tx, sql.conn, sql.Statement, sql.Args...)
+	res, err := sql.diver.QueryWith(sql.tx, sql.conn, sql.Statement, sql.Args...)
 
 	if err != nil {
 		return 0, err
 	}
 
-	if affectRow, _ := res.RowsAffected(); affectRow < 1 {
-		return 0, errors.New("no affect row")
+	var id int
+	if len(res) > 0 {
+		id, _ = strconv.Atoi(fmt.Sprintf("%v", res[0]["id"]))
 	}
 
-	return res.LastInsertId()
+	return int64(id), nil
 }
 
 func (sql *SQL) wrap(field string) string {
