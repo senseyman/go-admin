@@ -554,7 +554,7 @@ func (sql *SQL) Exec() (int64, error) {
 const postgresInsertCheckTableName = "goadmin_menu|goadmin_permissions|goadmin_roles|goadmin_users"
 
 // Insert exec the insert method of given key/value pairs.
-func (sql *SQL) Insert(values dialect.H) (int64, error) {
+func (sql *SQL) Insert(values dialect.H, options ...SQLOption) (int64, error) {
 	defer RecycleSQL(sql)
 
 	sql.Values = values
@@ -562,8 +562,13 @@ func (sql *SQL) Insert(values dialect.H) (int64, error) {
 	sql.dialect.Insert(&sql.SQLComponent)
 
 	if sql.diver.Name() == DriverPostgresql {
-
-		resMap, err := sql.diver.QueryWith(sql.tx, sql.conn, sql.Statement+" RETURNING id", sql.Args...)
+		returnIDStr := " RETURNING id"
+		for _, option := range options {
+			if option == SQLOptionsNoReturnID {
+				returnIDStr = ""
+			}
+		}
+		resMap, err := sql.diver.QueryWith(sql.tx, sql.conn, sql.Statement+returnIDStr, sql.Args...)
 
 		if err != nil {
 
